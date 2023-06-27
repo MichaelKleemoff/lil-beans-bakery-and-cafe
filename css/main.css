@@ -1,3 +1,29 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 2vw;
+	position: sticky;
+	text-align: center;
+	padding: 2rem;
+	background-color: bisque;
+}
+
 h1 {
-	color: red;
+	display: inline-block;
+	color: #fff;
+	text-shadow: 4px 4px 4px rgba(111, 111, 111, 0.4);
+}
+
+#lil-logo {
+	width: 12vw;
+	box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.4);
+	padding: 1vw;
+	background-color: hsl(29, 38%, 74%);
+	border-radius: 50%;
 }
