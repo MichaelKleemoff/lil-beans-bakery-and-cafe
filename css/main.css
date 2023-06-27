@@ -8,10 +8,17 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 2vw;
+	top: 0;
 	position: sticky;
 	text-align: center;
 	padding: 1.6rem;
 	background-color: bisque;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	justify-items: center;
 }
 
 h1 {
@@ -22,7 +29,6 @@ h1 {
 
 #lil-bread {
 	width: 9vw;
-
 	border: 3px outset gold;
 	box-shadow: 4px 4px 4px 3px rgba(92, 92, 92, 0.4);
 }
@@ -35,6 +41,15 @@ h1 {
 	border-radius: 50%;
 }
 
+.product {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .product aside img {
-	width: 260px;
+	width: 15vw;
+}
+
+.product-name {
+	color: red;
 }
