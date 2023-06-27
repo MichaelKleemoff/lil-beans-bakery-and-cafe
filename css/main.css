@@ -1,5 +1,6 @@
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #fff;
 }
 
 header {
@@ -17,7 +18,8 @@ header {
 
 main {
 	display: grid;
-	grid-template-columns: repeat(2, 2fr);
+	grid-template-columns: 2fr 1fr;
+	gap: 2em;
 	justify-items: center;
 }
 
@@ -25,6 +27,12 @@ h1 {
 	display: inline-block;
 	color: #fff;
 	text-shadow: 4px 4px 4px rgba(111, 111, 111, 0.4);
+}
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+	color: hsl(29, 64%, 51%);
 }
 
 #lil-bread {
@@ -42,14 +50,64 @@ h1 {
 }
 
 .product {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.product-img {
+	margin: 20px;
 }
 
 .product aside img {
-	width: 15vw;
+	width: 12vw;
+	height: 35vh;
+}
+
+.product-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-content: flex-start;
+	padding: 20px;
+	color: hsl(29, 64%, 51%);
 }
 
 .product-name {
-	color: red;
+	font-weight: 700;
+	font-size: 1.2rem;
+	padding-bottom: 20px;
+}
+
+.product-description h4 {
+	padding: 20px 0;
+}
+
+.price {
+	color: olivedrab;
+}
+
+.stock {
+	background-color: rgba(111, 111, 111, 0.4);
+	color: #fff;
+	padding: 0.4rem;
+}
+
+#inventory {
+	width: 40vw;
+	background-color: rgb(251, 245, 238);
+	gap: 5px;
+	margin: 20px;
+}
+
+#inventory h2 {
+	margin: 20px;
+}
+
+#new-product {
+	border: 2px solid red;
+}
+
+form {
+	border: 2px solid #333;
 }
