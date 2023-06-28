@@ -3,6 +3,7 @@ body {
 	background-color: #fff;
 }
 
+/* Header Section */
 header {
 	display: flex;
 	flex-direction: row;
@@ -16,22 +17,10 @@ header {
 	background-color: bisque;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	justify-content: space-evenly;
-}
-
 h1 {
 	display: inline-block;
 	color: #fff;
 	text-shadow: 4px 4px 4px rgba(111, 111, 111, 0.4);
-}
-
-h2 {
-	text-align: center;
-	font-weight: bold;
-	color: hsl(29, 64%, 51%);
 }
 
 #lil-bread {
@@ -48,6 +37,20 @@ h2 {
 	border-radius: 50%;
 }
 
+/* Main Section */
+main {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: space-evenly;
+}
+
+h2 {
+	text-align: center;
+	font-weight: bold;
+	color: hsl(29, 64%, 51%);
+}
+
+/* Inventory Section */
 .product {
 	display: flex;
 	flex-direction: row;
@@ -88,7 +91,6 @@ h2 {
 .stock-span {
 	background-color: rgba(189, 192, 62, 0.4);
 	color: hsl(29, 64%, 51%);
-
 	font-size: 0.9em;
 	padding: 0.5em;
 }
@@ -98,26 +100,13 @@ h2 {
 	grid-template-rows: 100px;
 	justify-content: center;
 	width: 50vw;
-	background-color: rgb(251, 245, 238);
-	gap: 5px;
+	background-color: rgb(230, 221, 211);
 }
 
 #inventory h2 {
 	margin: 20px;
 }
 
-#new-product {
-	border: 2px solid red;
-	width: 50vw;
-}
-
-form {
-	border: 2px solid #333;
-}
-
-/* #form-btns {
-
-} */
 #btn-remove {
 	background-color: rgb(244, 30, 30);
 	color: #fff;
@@ -131,6 +120,21 @@ form {
 	padding: 0.4rem 1.1rem;
 	margin-top: 0.8rem;
 }
+
+/* New Product Form Section */
+form {
+	border: 2px solid #333;
+	background-color: rgb(251, 245, 238);
+}
+
+#new-product {
+	border: 2px solid red;
+	width: 50vw;
+}
+
+/* #form-btns {
+
+} */
 
 #btn-reset {
 	background-color: rgb(71, 165, 20);
@@ -159,3 +163,5 @@ form {
 	padding: 0.4rem 1.1rem;
 	margin-top: 0.8rem;
 }
+
+/* Footer Section */

@@ -25,6 +25,7 @@
 		<main>
 			<section id="inventory">
 				<h2>Products Inventory</h2>
+				<hr />
 				<article id="first-product" class="product">
 					<aside class="product-img">
 						<img src="./images/navy-bean-bread2.jpg" alt="navy bean bread" />
@@ -75,10 +76,34 @@
 				<form>
 					<h2>Add New Product</h2>
 					<hr />
+
 					<label for="product-name">
-						Name
-						<input type="text" name="" id="product-name" />
+						Name<br />
+						<input type="text" name="name" id="product-name" required />
 					</label>
+					<br /><br />
+
+					<label for="product-image">
+						Image URL<br />
+						<input type="url" name="image" id="product-image" />
+					</label>
+					<br /><br />
+
+					<label for="product-price">
+						Price<br />
+						<input type="number" name="price" id="product-price" />
+					</label>
+					<br /><br />
+
+					<label>
+						In Stock<br />
+						<select name="stock" id="product-stock">
+							<option>-- Select One --</option>
+							<option value="in">In Stock</option>
+							<option value="out">Out Of Stock</option>
+						</select>
+					</label>
+					<br /><br />
 
 					<section id="form-btns">
 						<input id="btn-reset" type="reset" value="Reset" />
