@@ -24,13 +24,13 @@ h1 {
 }
 
 #lil-bread {
-	width: 9vw;
+	width: 7vw;
 	border: 3px outset gold;
 	box-shadow: 4px 4px 4px 3px rgba(92, 92, 92, 0.4);
 }
 
 #lil-logo {
-	width: 12vw;
+	width: 10vw;
 	box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.4);
 	padding: 1vw;
 	background-color: hsl(29, 38%, 74%);
