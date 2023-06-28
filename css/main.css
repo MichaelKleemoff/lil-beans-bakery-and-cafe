@@ -1,6 +1,6 @@
 body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background-color: #fff;
+	background-color: rgb(251, 245, 238);
 }
 
 /* Header Section */
@@ -24,13 +24,13 @@ h1 {
 }
 
 #lil-bread {
-	width: 7vw;
+	width: 6vw;
 	border: 3px outset gold;
 	box-shadow: 4px 4px 4px 3px rgba(92, 92, 92, 0.4);
 }
 
 #lil-logo {
-	width: 10vw;
+	width: 9vw;
 	box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.4);
 	padding: 1vw;
 	background-color: hsl(29, 38%, 74%);
@@ -58,6 +58,7 @@ h2 {
 }
 
 .product-img {
+	box-sizing: content-box;
 	margin: 20px;
 }
 
@@ -90,7 +91,20 @@ h2 {
 
 .stock-span {
 	background-color: rgba(189, 192, 62, 0.4);
-	color: hsl(29, 64%, 51%);
+	color: olive;
+	font-weight: 600;
+	font-size: 0.9em;
+	padding: 0.5em;
+}
+
+.gluten-div {
+	margin: 0.8em 0;
+}
+
+.gluten-span {
+	background-color: rgba(192, 140, 62, 0.4);
+	color: olive;
+	font-weight: 600;
 	font-size: 0.9em;
 	padding: 0.5em;
 }
@@ -123,18 +137,52 @@ h2 {
 
 /* New Product Form Section */
 form {
-	border: 2px solid #333;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	background-color: rgb(251, 245, 238);
+	height: 80vh;
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+
+form h2 {
+	padding-bottom: 35px;
+}
+
+input,
+select,
+label {
+	width: 90%;
+	margin: auto;
+	padding-left: 5%;
+}
+
+input,
+select {
+	height: 1.8rem;
+}
+
+select {
+	text-align: center;
 }
 
 #new-product {
-	border: 2px solid red;
 	width: 50vw;
 }
 
-/* #form-btns {
+#form-btns {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	padding: 25px;
+	gap: 25px;
+}
 
-} */
+.btn-form {
+	padding: 0.4rem 1.4rem;
+	margin-top: 0.8rem;
+}
 
 #btn-reset {
 	background-color: rgb(71, 165, 20);
@@ -146,8 +194,6 @@ form {
 	letter-spacing: 0.1rem;
 	border: none;
 	border-radius: 7px;
-	padding: 0.4rem 1.1rem;
-	margin-top: 0.8rem;
 }
 
 #btn-submit {
@@ -160,8 +206,6 @@ form {
 	letter-spacing: 0.1rem;
 	border: none;
 	border-radius: 7px;
-	padding: 0.4rem 1.1rem;
-	margin-top: 0.8rem;
 }
 
 /* Footer Section */

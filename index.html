@@ -55,6 +55,9 @@
 						<div class="stock-div">
 							<span class="stock-span">In Stock</span>
 						</div>
+						<div class="gluten-div">
+							<span class="gluten-span">Has Gluten</span>
+						</div>
 						<div><button id="btn-remove" type="button">Remove</button></div>
 					</aside>
 				</article>
@@ -68,6 +71,9 @@
 						<h4>price: <span class="price">$2.50</span></h4>
 						<div class="stock-div">
 							<span class="stock-span">In Stock</span>
+						</div>
+						<div class="gluten-div">
+							<span class="gluten-span">Has Gluten</span>
 						</div>
 						<div><button id="btn-remove" type="button">Remove</button></div>
 					</aside>
@@ -86,6 +92,9 @@
 						<div class="stock-div">
 							<span class="stock-span">In Stock</span>
 						</div>
+						<div class="gluten-div">
+							<span class="gluten-span">Has Gluten</span>
+						</div>
 						<div><button id="btn-remove" type="button">Remove</button></div>
 					</aside>
 				</article>
@@ -93,7 +102,6 @@
 			<section id="new-product">
 				<form>
 					<h2>Add New Product</h2>
-					<hr />
 
 					<label for="product-name">
 						Name<br />
@@ -123,9 +131,24 @@
 					</label>
 					<br /><br />
 
+					<label>
+						Gluten-Free <br />
+						<select name="stock" id="product-stock">
+							<option>-- Select One --</option>
+							<option value="gluten-free">No Gluten</option>
+							<option value="has-gluten">Has Gluten</option>
+						</select>
+					</label>
+					<br /><br />
+
 					<section id="form-btns">
-						<input id="btn-reset" type="reset" value="Reset" />
-						<input id="btn-submit" type="submit" value="Submit" />
+						<input id="btn-reset" class="btn-form" type="reset" value="Reset" />
+						<input
+							id="btn-submit"
+							class="btn-form"
+							type="submit"
+							value="Submit"
+						/>
 					</section>
 				</form>
 			</section>
