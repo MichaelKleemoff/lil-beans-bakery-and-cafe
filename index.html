@@ -33,7 +33,10 @@
 						<h3 class="product-name">Navy Bean Bread</h3>
 						<hr />
 						<h4>price: <span class="price">$7.29</span></h4>
-						<div><span class="stock">In Stock</span></div>
+						<div class="stock-div">
+							<span class="stock-span">In Stock</span>
+						</div>
+						<div><button id="btn-remove" type="button">Remove</button></div>
 					</aside>
 				</article>
 				<article id="second-product" class="product">
@@ -44,7 +47,10 @@
 						<h3 class="product-name">Navy Bean Pies</h3>
 						<hr />
 						<h4>price: <span class="price">$2.50</span></h4>
-						<div><span class="stock">In Stock</span></div>
+						<div class="stock-div">
+							<span class="stock-span">In Stock</span>
+						</div>
+						<div><button id="btn-remove" type="button">Remove</button></div>
 					</aside>
 				</article>
 				<article id="third-product" class="product">
@@ -58,7 +64,10 @@
 						<h3 class="product-name">Red Velvet Cake</h3>
 						<hr />
 						<h4>price: <span class="price">$26.89</span></h4>
-						<div><span class="stock">In Stock</span></div>
+						<div class="stock-div">
+							<span class="stock-span">In Stock</span>
+						</div>
+						<div><button id="btn-remove" type="button">Remove</button></div>
 					</aside>
 				</article>
 			</section>
@@ -66,6 +75,15 @@
 				<form>
 					<h2>Add New Product</h2>
 					<hr />
+					<label for="product-name">
+						Name
+						<input type="text" name="" id="product-name" />
+					</label>
+
+					<section id="form-btns">
+						<input id="btn-reset" type="reset" value="Reset" />
+						<input id="btn-submit" type="submit" value="Submit" />
+					</section>
 				</form>
 			</section>
 		</main>
