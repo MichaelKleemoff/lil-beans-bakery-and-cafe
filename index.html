@@ -55,10 +55,16 @@
 						<hr />
 						<h4>price: <span class="price">$7.29</span></h4>
 						<div>
-							<button class="btn-stock" type="button">In Stock</button>
+							<p>
+								<button class="btn-stock" type="button">Stock</button
+								><span class="stock-in">In Stock</span>
+							</p>
 						</div>
 						<div>
-							<button class="btn-gluten" type="button">Has Gluten</button>
+							<p>
+								<button class="btn-gluten" type="button">Gluten</button
+								><span class="gluten-has">Has Gluten</span>
+							</p>
 						</div>
 						<div>
 							<button class="btn-remove" type="button">Remove</button>
@@ -75,10 +81,16 @@
 						<hr />
 						<h4>price: <span class="price">$2.50</span></h4>
 						<div>
-							<button class="btn-stock" type="button">In Stock</button>
+							<p>
+								<button class="btn-stock" type="button">Stock</button
+								><span class="stock-in">In Stock</span>
+							</p>
 						</div>
 						<div>
-							<button class="btn-gluten" type="button">Has Gluten</button>
+							<p>
+								<button class="btn-gluten" type="button">Gluten</button
+								><span class="gluten-has">Has Gluten</span>
+							</p>
 						</div>
 						<div>
 							<button class="btn-remove" type="button">Remove</button>
@@ -98,10 +110,16 @@
 						<hr />
 						<h4>price: <span class="price">$26.89</span></h4>
 						<div>
-							<button class="btn-stock" type="button">In Stock</button>
+							<p>
+								<button class="btn-stock" type="button">Stock</button
+								><span class="stock-in">In Stock</span>
+							</p>
 						</div>
 						<div>
-							<button class="btn-gluten" type="button">Has Gluten</button>
+							<p>
+								<button class="btn-gluten" type="button">Gluten</button
+								><span class="gluten-has">Has Gluten</span>
+							</p>
 						</div>
 						<div>
 							<button class="btn-remove" type="button">Remove</button>
@@ -115,25 +133,25 @@
 					<h2>Add New Product</h2>
 
 					<label for="product-name">
-						Name<br />
-						<input type="text" name="name" id="product-name" required />
+						Product <br />
+						<input type="text" name="product" id="product-name" required />
 					</label>
 					<br /><br />
 
 					<label for="product-image">
-						Image URL<br />
+						Image URL <br />
 						<input type="url" name="image" id="product-image" />
 					</label>
 					<br /><br />
 
 					<label for="product-price">
-						Price<br />
+						Price <br />
 						<input type="number" name="price" id="product-price" />
 					</label>
 					<br /><br />
 
 					<label>
-						In Stock<br />
+						Stock <br />
 						<select name="stock" id="product-stock">
 							<option>-- Select One --</option>
 							<option value="in">In Stock</option>
@@ -143,11 +161,11 @@
 					<br /><br />
 
 					<label>
-						Gluten-Free <br />
-						<select name="stock" id="product-stock">
+						Gluten <br />
+						<select name="gluten" id="product-gluten">
 							<option>-- Select One --</option>
-							<option value="gluten-free">No Gluten</option>
-							<option value="has-gluten">Has Gluten</option>
+							<option value="gluten-free">Has Gluten</option>
+							<option value="has-gluten">Gluten-Free</option>
 						</select>
 					</label>
 					<br /><br />

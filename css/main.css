@@ -97,6 +97,25 @@ h2 {
 	margin: 20px;
 }
 
+/* Stock and Gluten Buttons */
+.stock-in,
+.gluten-free {
+	margin: 0.5em 0.8em;
+	color: green;
+	font-weight: 600;
+	font-size: 0.9em;
+	font-style: oblique;
+}
+
+.stock-out,
+.gluten-has {
+	margin: 0.5em 0.8em;
+	color: red;
+	font-weight: 600;
+	font-size: 0.9em;
+	font-style: oblique;
+}
+
 .btn-stock {
 	background-color: rgba(189, 192, 62, 0.4);
 	color: olive;
@@ -123,6 +142,7 @@ h2 {
 	padding: 0.4rem 0.6rem;
 }
 
+/* Remove Button */
 .btn-remove {
 	background-color: rgb(244, 30, 30);
 	color: #fff;
@@ -174,6 +194,7 @@ select {
 	width: 50vw;
 }
 
+/* Reset and Submit Buttons */
 #form-btns {
 	display: flex;
 	flex-direction: row;
