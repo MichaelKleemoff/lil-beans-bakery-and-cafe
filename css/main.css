@@ -142,6 +142,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: center;
 	background-color: rgb(251, 245, 238);
 	height: 80vh;
 	padding-top: 20px;
@@ -176,6 +177,7 @@ select {
 #form-btns {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	margin: auto;
 	padding: 25px;
 	gap: 25px;
@@ -183,7 +185,6 @@ select {
 
 .btn-form {
 	padding: 0.4rem 1.4rem;
-	margin-top: 0.8rem;
 }
 
 #btn-reset {
@@ -211,3 +212,14 @@ select {
 }
 
 /* Footer Section */
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	text-align: center;
+	padding: 2.6rem;
+	background-color: rgb(167, 97, 12);
+	color: #fdfeff;
+}
