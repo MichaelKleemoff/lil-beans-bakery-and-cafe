@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Lil Beans Bakery and Cafe</title>
+
+		<!-- Favicon links -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -22,10 +24,16 @@
 			href="./favicon-16x16.png"
 		/>
 		<link rel="manifest" href="./site.webmanifest" />
+
+		<!-- CSS Links -->
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- JavaScript Links -->
+		<script src="./src/createProduct.js" defer></script>
 		<script src="./js/main.js" defer></script>
 	</head>
+
 	<body>
 		<header>
 			<img
@@ -46,7 +54,7 @@
 				<h2>Products Inventory</h2>
 				<hr />
 
-				<article id="first-product" class="product">
+				<article class="product">
 					<aside class="product-img">
 						<img src="./images/navy-bean-bread2.jpg" alt="navy bean bread" />
 					</aside>
@@ -72,7 +80,7 @@
 					</aside>
 				</article>
 
-				<article id="second-product" class="product">
+				<article class="product">
 					<aside class="product-img">
 						<img src="./images/bean-pies-long2.jpeg" alt="bean pies" />
 					</aside>
@@ -98,7 +106,7 @@
 					</aside>
 				</article>
 
-				<article id="third-product" class="product">
+				<article class="product">
 					<aside class="product-img">
 						<img
 							src="./images/red-velvet-cake1.jpg"
@@ -134,19 +142,30 @@
 
 					<label for="product-name">
 						Product <br />
-						<input type="text" name="product" id="product-name" required />
+						<input type="text" name="product" id="product-name" />
 					</label>
 					<br /><br />
 
 					<label for="product-image">
 						Image URL <br />
-						<input type="url" name="image" id="product-image" />
+						<input
+							type="url"
+							placeholder="https://www.site.com"
+							name="image"
+							id="product-image"
+						/>
 					</label>
 					<br /><br />
 
 					<label for="product-price">
 						Price <br />
-						<input type="number" name="price" id="product-price" />
+						<input
+							type="number"
+							name="price"
+							id="product-price"
+							placeholder="0.00"
+							step="0.01"
+						/>
 					</label>
 					<br /><br />
 
@@ -154,8 +173,8 @@
 						Stock <br />
 						<select name="stock" id="product-stock">
 							<option>-- Select One --</option>
-							<option value="in">In Stock</option>
-							<option value="out">Out Of Stock</option>
+							<option value="In Stock">In Stock</option>
+							<option value="Out Of Stock">Out Of Stock</option>
 						</select>
 					</label>
 					<br /><br />
@@ -164,8 +183,8 @@
 						Gluten <br />
 						<select name="gluten" id="product-gluten">
 							<option>-- Select One --</option>
-							<option value="gluten-free">Has Gluten</option>
-							<option value="has-gluten">Gluten-Free</option>
+							<option value="Has Gluten">Has Gluten</option>
+							<option value="Gluten-Free">Gluten-Free</option>
 						</select>
 					</label>
 					<br /><br />

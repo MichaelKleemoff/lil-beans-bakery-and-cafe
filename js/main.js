@@ -41,6 +41,32 @@ btnsGluten.forEach((button) => {
 	});
 });
 
+// Form and Inventory
+const form = document.querySelector('form');
+const inventory = document.querySelector('#inventory');
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const productName = event.target['product-name'].value;
+	const imageURL = event.target['product-image'].value;
+	const productPrice = event.target['product-price'].value;
+	const productStock = event.target['product-stock'].value;
+	const productGluten = event.target['product-gluten'].value;
+
+	inventory.appendChild(
+		createNewProduct(
+			productName,
+			imageURL,
+			productPrice,
+			productStock,
+			productGluten
+		)
+	);
+
+	form.reset();
+});
+
 // Footer
 // Get the current year and `append` it to the copyright line in the `footer`.
 const currentYear = document.querySelector('#current-year');
