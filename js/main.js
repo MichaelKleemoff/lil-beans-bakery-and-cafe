@@ -1,3 +1,29 @@
+// Form and Inventory
+const form = document.querySelector('form');
+const inventory = document.querySelector('#inventory');
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const productName = document.querySelector('#product-name').value;
+	const imageURL = document.querySelector('#product-image').value;
+	const productPrice = document.querySelector('#product-price').value;
+	const productStock = document.querySelector('#product-stock').value;
+	const productGluten = document.querySelector('#product-gluten').value;
+
+	const article = createNewProduct(
+		productName,
+		imageURL,
+		productPrice,
+		productStock,
+		productGluten
+	);
+
+	inventory.append(article);
+
+	form.reset();
+});
+
 // When a user clicks on the "Remove" button for each resource, that resource is removed from the page.
 const btnsRemove = document.querySelectorAll('.btn-remove');
 
@@ -39,32 +65,6 @@ btnsGluten.forEach((button) => {
 			event.target.nextSibling.textContent = 'Has Gluten';
 		}
 	});
-});
-
-// Form and Inventory
-const form = document.querySelector('form');
-const inventory = document.querySelector('#inventory');
-
-form.addEventListener('submit', (event) => {
-	event.preventDefault();
-
-	const productName = event.target['product-name'].value;
-	const imageURL = event.target['product-image'].value;
-	const productPrice = event.target['product-price'].value;
-	const productStock = event.target['product-stock'].value;
-	const productGluten = event.target['product-gluten'].value;
-
-	inventory.appendChild(
-		createNewProduct(
-			productName,
-			imageURL,
-			productPrice,
-			productStock,
-			productGluten
-		)
-	);
-
-	form.reset();
 });
 
 // Footer

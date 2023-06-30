@@ -15,6 +15,7 @@ function createNewProduct(product, imageURL, price, stock, gluten) {
 	const pStock = document.createElement('p');
 	const pGluten = document.createElement('p');
 	const btnStock = document.createElement('button');
+
 	const btnGluten = document.createElement('button');
 	const btnRemove = document.createElement('button');
 
