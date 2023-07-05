@@ -2,6 +2,12 @@
 const form = document.querySelector('form');
 const inventory = document.querySelector('#inventory');
 const inventoryHr = document.querySelector('#inventory hr');
+const modal = document.querySelector('#modal-errors');
+const modalUl = document.createElement('ul');
+const productNameLi = document.createElement('li');
+const productPriceLi = document.createElement('li');
+modal.append(modalUl);
+const btnReset = document.querySelector('#btn-reset');
 
 // Form submission
 form.addEventListener('submit', (event) => {
@@ -9,19 +15,28 @@ form.addEventListener('submit', (event) => {
 
 	const productName = document.querySelector('#product-name').value;
 	const imageURL = document.querySelector('#product-image').value;
-	const productPrice = document.querySelector('#product-price').value;
+	const productPrice = Number(document.querySelector('#product-price').value);
 	const productStock = document.querySelector('#product-stock').value;
 	const productGluten = document.querySelector('#product-gluten').value;
 
-	const newProduct = createNewProduct(
-		productName,
-		imageURL,
-		productPrice,
-		productStock,
-		productGluten
-	);
+	console.log(typeof productPrice, productPrice);
 
-	inventoryHr.insertAdjacentElement('afterend', newProduct);
+	try {
+		formErrorModal(
+			productName,
+			imageURL,
+			productPrice,
+			productStock,
+			productGluten
+		);
+	} catch (error) {
+		let nameError = 'Product name must have 3 characters or more.';
+		let priceError = 'Price must be at least $1.00 or more.';
+
+		console.log('Price error', priceError);
+		newLi(productName, productPrice, nameError, priceError);
+		openModal();
+	}
 
 	form.reset();
 });
@@ -54,6 +69,14 @@ inventory.addEventListener('click', (event) => {
 	if (event.target.className === 'btn-remove') {
 		event.target.parentNode.parentNode.parentNode.remove();
 	}
+});
+
+btnReset.addEventListener('click', () => {
+	if (!modal.classList.contains('hidden')) {
+		closeModal();
+	}
+
+	form.reset();
 });
 
 // Footer

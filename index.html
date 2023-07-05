@@ -30,7 +30,8 @@
 		<link rel="stylesheet" href="./css/main.css" />
 
 		<!-- JavaScript Links -->
-		<script src="./src/createProduct.js" defer></script>
+		<script src="./src/createNewProduct.js" defer></script>
+		<script src="./src/formErrorModal.js"></script>
 		<script src="./js/main.js" defer></script>
 	</head>
 
@@ -191,6 +192,8 @@
 					</label>
 					<br /><br />
 
+					<div id="modal-errors" class="modal hidden"></div>
+
 					<section id="form-btns">
 						<input id="btn-reset" class="btn-form" type="reset" value="Reset" />
 						<input
@@ -198,6 +201,7 @@
 							class="btn-form"
 							type="submit"
 							value="Submit"
+							required
 						/>
 					</section>
 				</form>
